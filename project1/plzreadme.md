@@ -53,10 +53,14 @@
         2. rederer WebGL use krta hai(jo ki gpu ke sath directly kam krta h) aur hr ek pixel ko paint karta hai.
 
         3. renderer bnane ka tarika 
-          ```const renderer = new THREE.WebGLRenderer(); 
+        ---
+          const renderer = new THREE.WebGLRenderer(); 
           renderer.setSize(window.innerWidth, window.innerHeight); 
-          document.body.appendChild(renderer.domElement);```
+          document.body.appendChild(renderer.domElement);
+        ---
+          
           Isme kya ho raha hai usko samjho:
+
               WebGLRenderer() → Ek painter ban gaya.
               setSize() → Kitni badi canvas (drawing area) chahiye.
               appendChild(renderer.domElement) → Renderer ek <canvas> banata hai aur usko HTML me add karta hai, taki tum dekh sako.
