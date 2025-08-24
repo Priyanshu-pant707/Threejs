@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #000; /* fallback if canvas not visible */
+  color: #fff;
+}
+canvas.threejs {
+  position: fixed;   /* canvas ko full screen fix kar diya */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0; /* canvas background */
+}
+
+.name {
+  position: absolute; /* canvas ke upar place hoga */
+  top: 50px;
+  left: 50px;
+  max-width: 400px;
+  background: rgba(108, 93, 93, 0.158); /* thoda transparent */
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  z-index: 1; /* canvas se upar */
+  backdrop-filter: blur(6px);
+  font-size: 16px;
+}
+
+.name h1 {
+  color: #ff0000;
+}

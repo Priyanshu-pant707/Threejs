@@ -1,5 +1,5 @@
 # scene
-- three.js me scene ek container (dabba) jaisa hota 
+- three.js me scene ek container (dabba) jaisa hota .
 - jisme tum ek object(cube,sphere,models),lights(torch,bulb,sunlight) aur camera (like tum ,jo scene ko dekhega) rakhte ho
 
   
@@ -58,7 +58,7 @@
           renderer.setSize(window.innerWidth, window.innerHeight); 
           document.body.appendChild(renderer.domElement);
         ---
-          
+        
           Isme kya ho raha hai usko samjho:
 
               WebGLRenderer() → Ek painter ban gaya.
